@@ -21,7 +21,7 @@ if (getenv("AUTH_TYPE") == "auth"):
 
 
 @app.before_request
-def before_request_handler():
+def before_request_handler(): -> None
     """ Handles authentication and authentication headers
     """
     if (auth is not None):
