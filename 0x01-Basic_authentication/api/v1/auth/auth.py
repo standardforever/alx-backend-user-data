@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from flask import request
 from typing import List, TypeVar
 from api.v1.views.users import User
