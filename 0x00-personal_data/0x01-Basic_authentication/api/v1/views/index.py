@@ -26,19 +26,17 @@ def stats() -> str:
     return jsonify(stats)
 
 
-@app_views.route('/unauthorized/', strict_slashes=False)
+@app_views.route('/unauthorized', strict_slashes=False)
 def unauthorized() -> str:
-    """ GET /api/v1/unauthorized
-    Return:
-      - the number of each objects
+    """ Get /api/v1/unauthorized
     """
     abort(401)
+    return ""
 
 
-@app_views.route('/forbidden/', strict_slashes=False)
+@app_views.route('/forbidden', strict_slashes=False)
 def forbidden() -> str:
-    """ GET /api/v1/forbidden
-    Return:
-      - the number of each objects
+    """ Get /api/v1/forbidden
     """
     abort(403)
+    return ""

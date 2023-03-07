@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Route module for the API
+Route module for the API's
 """
 from os import getenv
 from api.v1.views import app_views
@@ -21,7 +21,7 @@ if (getenv("AUTH_TYPE") == "auth"):
 
 
 @app.before_request
-def before_request_handler():
+def before_request_handler() -> None:
     """ Handles authentication and authentication headers
     """
     if (auth is not None):
